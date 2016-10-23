@@ -1,0 +1,16 @@
+Development Practices
+=====================
+
+This is a set of development practices and policies for
+*https://github.com/bk2204[@bk2204]*'s repositories and projects, as well
+policies he follows when working elsewhere.
+
+You're welcome to adopt these policies or modify them for your own purposes,
+under your choice of the https://opensource.org/licenses/MIT[MIT License] or the
+https://creativecommons.org/licenses/by/3.0/[Creative Commons Attribution 3.0
+License].
+
+== Documents
+
+link:security-research/[Security Research Policy]
+link:supported/[Supported OS & Software Policy]

@@ -1,0 +1,72 @@
+Supported OS & Software Policy
+==============================
+
+== Supported Operating Systems
+
+The following operating systems are fully supported.  That means that software
+following this policy should be able to work on them easily and robustly and
+compile and run cleanly without problems.
+
+* Debian GNU/Linux
+* Ubuntu
+* CentOS
+
+The following operating systems are partially supported.  That means code will
+be written with portability in mind and patches will generally be accepted to
+address issues.
+
+* Debian GNU/kFreeBSD
+* FreeBSD
+* NetBSD
+
+For all of these operating systems, the most recent major version of the
+operating system is supported.
+If the OS provides specific long-term support (LTS) versions that differ from
+regular versions, or the OS has an intended life longer than five years
+(essentially all LTS), then the most recent LTS version
+is also supported.
+If the most recent LTS version is less than a year old, the previous LTS is
+supported until the most recent LTS is a year old.
+
+In addition, Debian unstable (_sid_) is fully supported.
+
+For example, in November 2016, the following versions of Ubuntu would be
+supported:
+
+* Ubuntu 16.10 (most recent)
+* Ubuntu 16.04 (most recent LTS)
+* Ubuntu 14.04 (previous LTS; only until 2017-04)
+
+== Supported Software Policy
+
+Generally, the build and runtime stack of fully supported systems is supported.
+Software will compile with those compilers and run on those interpreters.
+Additional modules or software may be required; however, it should generally be
+compatible with those versions.
+
+For example, as of September 2016, Perl code would be expected to target 5.16
+and Ruby code would be expected to target 1.9.3, as these are the oldest
+supported versions in any fully supported OS.
+
+In addition, all Python code must function correctly on, at a minimum, the
+relevant versions of Python 3.
+
+== Design Considerations
+
+=== Shell
+
+Shell scripts will be written to confirm to
+https://www.debian.org/doc/debian-policy/ch-files.html#s-scripts[Debian's shell
+policy].
+That means scripts will be written for `/bin/sh` and that binary is expected to
+support the `local` keyword.footnote:[This requirement is the reason why OpenBSD
+is not supported.]
+A suitable `which` binary (one producing output roughly equivalent to the SUSv4
+`command -v`) is also required.
+
+== Unsupported Systems
+
+No patches will be accepted, nor will support be provided, for systems for which
+security support is no longer available free of charge.  Systems without
+security updates are a hazard to the Internet, and supporting them is
+detrimental to the public good.

@@ -1,0 +1,82 @@
+Security Research Policy
+========================
+
+I have an interest in computer security and cryptography.  As such, I will often
+audit various (usually open-source) software for vulnerabilities.  My goal is to
+identify vulnerabilities and report them responsibly so that they can be fixed.
+I generally aim to work with software companies and the FLOSS community whenever
+possible to ensure that users have the ability to use secure software.
+
+However, not all vendors are interested in addressing security vulnerabilities
+in a responsible, coordinated manner.  Some vendors deny true vulnerabilities,
+obscure security patches, delay extensively, or threaten legal action.  These
+hostile actions discourage responsible reports and threaten the work of security
+researchers.
+
+As such, I cannot work with vendors that are hostile to researchers.  In such
+cases, I practice full disclosure so that end users can take appropriate
+mitigation steps.
+
+== Timeline and Practices
+
+I aim for disclosure not more than 45 calendar days after the initial report.
+For software in Debian, the initial report is generally made to the Debian
+Security Team.  For websites and other vendors, the initial report is generally
+made to the `security@` address for that site.
+
+Disclosure consists of Debian and the upstream author or other vendor making a
+security announcement describing the problem with an appropriate credit to
+the discoverer, providing an updated release of the software, and for upstream
+authors of open-source projects, providing a patch or easily accessible version
+control commit that addresses the issue.  All of these components are
+obligatory.
+
+The requirement for a patch or public version control commit is so that
+researchers and the public can verify that the fix is correct and that it
+doesn't introduce regressions or other security issues.
+
+I generally request that a https://cve.mitre.org/[CVE] (or if relevant, a
+https://distributedweaknessfiling.org/[DWF]) be allocated for vulnerabilities so
+as to have a unique identifier to refer to.
+
+I will generally post a write-up detailing the vulnerability when it is
+disclosed, including any important dates.  Unless an extension is
+successfully negotiated, I will disclose the vulnerability after 45 calendar
+days, whether or not the vulnerability is fixed.  I will generally grant an
+extension to 60 calendar days upon request, but not usually beyond that.
+Disclosure before the deadline is fine unless I note otherwise.
+
+== Interactions
+
+I aim to have a good working relationship with upstream authors and security
+researchers.  The common goal is to have secure software and to benefit users.
+
+However, vendors which make a habit of denying vulnerabilities, not providing
+patches, not providing credit, delaying (or attempting to delay) beyond the
+deadline, or other unfriendly measures will generally not be accorded the
+privilege of coordinated disclosure.  In such a case, I reserve the right to
+disclose the vulnerability immediately and without previous notification.
+
+Immediate disclosure will also occur if no relevant security contact can be
+reached (say, because `security@` bounces).
+
+Any contact from law enforcement or a lawyer, as well as any legal threats,
+threats of retaliation, or contacting of my employer or clients, will result in
+immediate disclosure, no exceptions.
+
+== Vulnerabilities
+
+Generally, I consider the following to be vulnerabilities.  This is not an
+exhaustive list.
+
+* Privilege escalation or access to data or facilities beyond one's privilege
+* Code execution or data loss by viewing a document or media file
+* Handling data less securely than is documented
+* Cross-site request forgery
+* Cross-site scripting
+* Denial of service
+* Buffer overflows, even if mitigated, unless they can be demonstrated never to
+	affect data or execution
+* Predictable temporary files in an area where others can write, even if
+	mitigated
+* Symlink and hardlink attacks, even if mitigated
