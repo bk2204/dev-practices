@@ -18,6 +18,7 @@ address issues.
 * Debian GNU/kFreeBSD
 * FreeBSD
 * NetBSD
+* OpenBSD
 
 For all of these operating systems, the most recent major version of the
 operating system is supported.
@@ -59,8 +60,7 @@ Shell scripts will be written to confirm to
 https://www.debian.org/doc/debian-policy/ch-files.html#s-scripts[Debian's shell
 policy].
 That means scripts will be written for `/bin/sh` and that binary is expected to
-support the `local` keyword.footnote:[This requirement is the reason why OpenBSD
-is not supported.]
+support the `local` keyword.
 A suitable `which` binary (one producing output roughly equivalent to the SUSv4
 `command -v`) is also required.
 
