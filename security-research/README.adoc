@@ -48,18 +48,22 @@ Disclosure before the deadline is fine unless I note otherwise.
 
 == Interactions
 
+[#interaction-goal]
 I aim to have a good working relationship with upstream authors and security
 researchers.  The common goal is to have secure software and to benefit users.
 
+[#full-disclosure]
 However, vendors which make a habit of denying vulnerabilities, not providing
 patches, not providing credit, delaying (or attempting to delay) beyond the
 deadline, or other unfriendly measures will generally not be accorded the
 privilege of coordinated disclosure.  In such a case, I reserve the right to
 disclose the vulnerability immediately and without previous notification.
 
+[#no-security]
 Immediate disclosure will also occur if no relevant security contact can be
 reached (say, because `security@` bounces).
 
+[#legal-threats]
 Any contact from law enforcement or a lawyer, as well as any legal threats,
 threats of retaliation, or contacting of my employer or clients, will result in
 immediate disclosure, no exceptions.
