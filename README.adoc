@@ -12,5 +12,6 @@ License].
 
 == Documents
 
+link:code-practices/[Code Practices (Style Guide)]
 link:security-research/[Security Research Policy]
 link:supported/[Supported OS & Software Policy]

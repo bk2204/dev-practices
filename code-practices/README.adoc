@@ -1,0 +1,34 @@
+Code Practices
+==============
+
+This document outlines style, formatting, and similar concerns.
+
+These policies don't apply to outside projects, which have their own standards
+and norms.
+
+== Commits and Code Formatting
+
+In general, commits to the codebase follow the
+https://github.com/git/git/blob/master/Documentation/SubmittingPatches[standard
+rules for the Git Project]:
+
+* Commits should be signed-off in compliance with the
+  https://github.com/git/git/blob/master/Documentation/SubmittingPatches#L266[Developer's
+  Certificate of Origin 1.1] as specified in the Git Project documentation.
+* Commits should be logically separate and independent, and should pass the
+  testsuite at each stage.
+* Each commit should have a suitable commit message with a brief summary and a
+  description of the why the change is valuable.  Commit messages should be
+  wrapped at 72 characters.  The summary should ideally be 50 characters or
+  less.
+* Trailing whitespace should be stripped.
+
+Code should be formatted with four spaces unless the language norm differs (e.g.
+two spaces for Ruby).  The choice of spaces is ultimately arbitrary, but it
+seems to be somewhat more popular than tabs and it formats more consistently
+between editors and the terminal.
+
+Code should generally be wrapped at 80 characters, unless the language norm
+differs.  While 80-column terminals aren't exceptionally common anymore, lots of
+people use multiple editor windows or terminals side by side, sometimes on small
+monitors.
